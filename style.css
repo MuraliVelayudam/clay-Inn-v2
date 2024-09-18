@@ -403,6 +403,10 @@ input[type="number"] {
 @media (max-width: 768px) {
   /* Header */
 
+  .header_nav {
+    padding: 12px 0px;
+  }
+
   header {
     margin: 0px;
   }
