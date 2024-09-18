@@ -80,7 +80,7 @@
 /* POP UP */
 
 header {
-  margin: 50px 0px;
+  margin: 40px 0px;
 }
 .header_nav {
   display: flex;
@@ -88,7 +88,7 @@ header {
   justify-content: space-between;
   width: 90%;
   margin: auto;
-  padding: 12px 25px;
+  padding: 0px 25px;
   position: relative;
 }
 
@@ -100,7 +100,7 @@ header {
 }
 
 .img_logo img {
-  width: 180px;
+  width: 150px;
 }
 
 .box .div {
@@ -311,7 +311,8 @@ input[type="number"] {
   color: #381d03;
   text-align: center;
   font-family: Poppins;
-  font-size: clamp(2rem, 4vw, 3.75rem);
+  /* font-size: clamp(2rem, 4vw, 3.75rem); */
+  font-size: 2.9rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
@@ -398,6 +399,10 @@ input[type="number"] {
   width: 100px;
 }
 
+.text-wrapper-loaction {
+  font-size: 14px;
+}
+
 /* RESPONSIVE ------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 768px) {
@@ -453,7 +458,10 @@ input[type="number"] {
   /* FRAME */
 
   .text-wrapper {
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .text-wrapper-loaction {
+    font-size: 10px;
   }
 
   /* LOGO */
@@ -570,7 +578,7 @@ input[type="number"] {
 
   /* our-location-text */
   .our-location-text {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .small-frame {
