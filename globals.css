@@ -62,3 +62,9 @@ swiper-slide img {
 .swiper-pagination-bullet {
   color: white !important;
 }
+
+.flatpickr-calendar {
+  font-size: 10px !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
