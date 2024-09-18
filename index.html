@@ -20,20 +20,34 @@
       <img src="img/image-2545.png" alt="Clay Inn" class="pop_up_img_logo" />
       <div class="hotels">
         <div class="hotel">
-          <div>
+          <div class="location-card flex flex-col pop-wrap-content">
             <a target="_blank" href="https://delhi.clayinnhotel.com/">
-              <img src="img/delhi-min-1.png" alt="Delhi-Clay Inn" />
+              <img class="gurugram-m w-full rounded-xl" src="img/delhi-min-1.png" />
+              <div class="location-card-content flex w-full justify-between p-4">
+                <div class="flex gap-2 items-center">
+                  <img class="location w-8" src="img/location.svg" />
+                  <div class="text-wrapper"><span class="text-wrapper-loaction pop-span">Paschim Vihar New Delhi</span>
+                  </div>
+                </div>
+                <img class="img w-8" src="img/frame-1171275968.svg" />
+              </div>
             </a>
           </div>
-          <h3 class="pop-cap">Paschim Vihar, Delhi</h3>
         </div>
         <div class="hotel">
-          <div>
-            <a target="_blank" href="https://gurugram.clayinnhotel.com/">
-              <img src="img/gurugram-m-1.png" alt="gurugram-Clay Inn" />
+          <div class="location-card flex flex-col pop-wrap-content">
+            <a target="_blank" href="https://delhi.clayinnhotel.com/">
+              <img class="gurugram-m w-full rounded-xl" src="img/gurugram-m-1.png" />
+              <div class="location-card-content flex w-full justify-between p-4">
+                <div class="flex gap-2 items-center">
+                  <img class="location w-8" src="img/location.svg" />
+                  <div class="text-wrapper"><span class="text-wrapper-loaction pop-span">Sector 49, Gurugram</span>
+                  </div>
+                </div>
+                <img class="img w-8" src="img/frame-1171275968.svg" />
+              </div>
             </a>
           </div>
-          <h3 class="pop-cap">Sector-49,Gurugram</h3>
         </div>
       </div>
       <button id="closePopup">Close</button>
@@ -241,22 +255,26 @@
   <!-- FOOTER START HERE------------>
   <footer class="footer flex item-center justify-between py-5 md:px-10 px-5">
     <!-- --------------- -->
-    <div class="logo-conatiner">
-      <img src="./img/footer-img.png" alt="ClayInn" class="footer_img" />
-    </div>
-    <!-- ---------------- -->
-    <div class="footer-hotels">
-      <div class="link_footer">
-        <a target="_blank" href="https://delhi.clayinnhotel.com/">Paschim Vihar, Delhi</a>
-        <span>331, Meera Bagh Ring Road, Block A, Paschim Vihar, Delhi -
-          110087</span>
+
+    <div class="footer-wrapper">
+
+      <div class="logo-conatiner">
+        <img src="./img/footer-img.png" alt="ClayInn" class="footer_img" />
       </div>
-      <div class="link_footer">
-        <a target="_blank" href="https://gurugram.clayinnhotel.com/">Sector 49, Gurugram</a>
-        <span>
-          S-20 & 21, Uppal Southend, Block S, Sector-49, Gurugram,
-          Haryana-122018
-        </span>
+      <!-- ---------------- -->
+      <div class="footer-hotels">
+        <div class="link_footer">
+          <a target="_blank" href="https://delhi.clayinnhotel.com/">Paschim Vihar, Delhi</a>
+          <span>331, Meera Bagh Ring Road, Block A, Paschim Vihar, Delhi -
+            110087</span>
+        </div>
+        <div class="link_footer">
+          <a target="_blank" href="https://gurugram.clayinnhotel.com/">Sector 49, Gurugram</a>
+          <span>
+            S-20 & 21, Uppal Southend, Block S, Sector-49, Gurugram,
+            Haryana-122018
+          </span>
+        </div>
       </div>
     </div>
   </footer>
