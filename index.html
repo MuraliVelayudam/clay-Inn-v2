@@ -176,16 +176,29 @@
   </div>
 
   <!-- SWIPER START HERE -->
-  <div class="swiper-container">
+  <div class="swiper-container large-Swiper">
     <!-- ------------- -->
     <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="false" effect="fade"
       space-between="30" centered-slides="true" autoplay-delay="3000" autoplay-disable-on-interaction="false">
       <swiper-slide>
-        <img src="/img/slider1.png" alt="Image 1" /></swiper-slide>
+        <img src="/img/desktop slider/1200x200 copy 2.jpg" alt="Image 1" class="" />
+      </swiper-slide>
       <swiper-slide>
-        <img src="/img/delhi-min-1.png" alt="Image 2" /></swiper-slide>
+        <img src="/img/desktop slider/1200x600-1.jpg" alt="Image 2" />
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  <!-- ------------- -->
+  <div class="swiper-container small-Swiper">
+    <!-- ------------- -->
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="false" effect="fade"
+      space-between="30" centered-slides="true" autoplay-delay="3000" autoplay-disable-on-interaction="false">
       <swiper-slide>
-        <img src="/img/gurugram-m-1.png" alt="Image 3" /></swiper-slide>
+        <img src="/img/mobile Slider/1200x200 copy 3.jpg" alt="Image 1" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/img/mobile Slider/1200x600.jpg" alt="Image 2" />
+      </swiper-slide>
     </swiper-container>
   </div>
   <!-- ------------- -->
@@ -290,6 +303,7 @@
         defaultDate: "today",
         minDate: "today",
         disableMobile: "true",
+
         onChange: function (selectedDates) {
           const checkOutInput = document.querySelector("#check_out");
           checkOutInput._flatpickr.set(

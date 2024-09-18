@@ -404,9 +404,21 @@ input[type="number"] {
   font-size: 14px;
 }
 
+.small-Swiper {
+  display: none;
+}
+
 /* RESPONSIVE ------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 768px) {
+  .large-Swiper {
+    display: none;
+  }
+
+  .small-Swiper {
+    display: block;
+  }
+
   /* Header */
 
   .header_nav {
