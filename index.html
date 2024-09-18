@@ -14,16 +14,15 @@
 </head>
 
 <body class="scroll-smooth focus:scroll-auto">
-
   <!-- Pop-up container -------------------->
-  <div id="popup" style="display: none;">
+  <div id="popup" style="display: none">
     <div class="popup-content">
-      <img src="img/image-2545.png" alt="Clay Inn" class="pop_up_img_logo">
+      <img src="img/image-2545.png" alt="Clay Inn" class="pop_up_img_logo" />
       <div class="hotels">
         <div class="hotel">
           <div>
             <a target="_blank" href="https://delhi.clayinnhotel.com/">
-              <img src="img/delhi-min-1.png" alt="Delhi-Clay Inn">
+              <img src="img/delhi-min-1.png" alt="Delhi-Clay Inn" />
             </a>
           </div>
           <h3 class="pop-cap">Paschim Vihar, Delhi</h3>
@@ -31,7 +30,7 @@
         <div class="hotel">
           <div>
             <a target="_blank" href="https://gurugram.clayinnhotel.com/">
-              <img src="img/gurugram-m-1.png" alt="gurugram-Clay Inn">
+              <img src="img/gurugram-m-1.png" alt="gurugram-Clay Inn" />
             </a>
           </div>
           <h3 class="pop-cap">Sector-49,Gurugram</h3>
@@ -45,28 +44,29 @@
   <div class="box">
     <div class="group">
       <!-- HEADER -->
-      <!-- HOTEL / SUITE / CELEBRATION -->
-      <div class="frame">
-        <div class="div">
-          <div class="text-wrapper"><span> Hotel </span></div>
-          <span>|</span>
-          <div class="text-wrapper"><span> Suite </span></div>
-          <span>|</span>
-          <div class="text-wrapper">
-            <span>Celebrations</span>
+      <!-- HOTEL / SUITE / CELEBRATION Large Screen Header-->
+      <header>
+        <div class="header_nav">
+          <div class="left_head">
+            <p>
+              Hotel Hotels <span>|</span>
+              Suite
+              <span>|</span>
+              Celebrations
+            </p>
           </div>
+          <div class="img_logo">
+            <img src="./img/image-2545.png" alt="ClayInn">
+          </div>
+          <div class="logo_div">
+            <img src="./img/image-2545.png" alt="ClayInn">
+          </div>
+          <div> <button class="button-explorer" id="pop_up_Hotels">
+              Explore
+            </button></div>
         </div>
-        <!-- CLAY IN LOGO -->
+      </header>
 
-        <img class="logo" src="img/image-2545.png" />
-
-        <!-- EXPLORE -->
-        <div class="div-wrapper">
-          <button class="button-explorer" id="pop_up_Hotels">
-            Explore
-          </button>
-        </div>
-      </div>
       <!-- HEADER COMPLETED HERE -->
 
       <!-- SECTION - 1 STARTS HERE -->
@@ -229,30 +229,23 @@
   <footer class="footer flex item-center justify-between py-5 md:px-10 px-5">
     <!-- --------------- -->
     <div class="logo-conatiner">
-      <!-- <img src="./img/footer-img.png" alt="ClayInn" class="footer_img">
-
-      <div>
-        <h1 class="footer-head">Clay INN</h1>
-        <p class="footer-caption">Hotel | Suite | Celebrations</p>
-      </div> -->
-      <img src="./img/footer-img.png" alt="ClayInn" class="footer_img">
+      <img src="./img/footer-img.png" alt="ClayInn" class="footer_img" />
     </div>
     <!-- ---------------- -->
     <div class="footer-hotels">
       <div class="link_footer">
         <a target="_blank" href="https://delhi.clayinnhotel.com/">Paschim Vihar, Delhi</a>
-        <span>331, Meera Bagh Ring Road, Block A,
-          Paschim Vihar, Delhi - 110087</span>
+        <span>331, Meera Bagh Ring Road, Block A, Paschim Vihar, Delhi -
+          110087</span>
       </div>
       <div class="link_footer">
         <a target="_blank" href="https://gurugram.clayinnhotel.com/">Sector 49, Gurugram</a>
         <span>
-          S-20 & 21, Uppal Southend, Block S, Sector-49,
-          Gurugram, Haryana-122018
+          S-20 & 21, Uppal Southend, Block S, Sector-49, Gurugram,
+          Haryana-122018
         </span>
       </div>
     </div>
-
   </footer>
   <!-- FOOTER END HERE------------>
 
@@ -260,10 +253,10 @@
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-
       // POPUP-HOTELS
 
       const btn_PopUpEle = document.getElementById("pop_up_Hotels");
+
       const popup = document.getElementById("popup");
       const closePopup = document.getElementById("closePopup");
 
@@ -291,10 +284,6 @@
         }
       });
 
-
-
-
-
       // Initialize Flatpickr for Check-In Date
       const checkInInput = flatpickr("#check_in", {
         dateFormat: "d-m-Y",
@@ -314,7 +303,7 @@
         },
       });
 
-      // Initialize Flatpickr for Check-Out Date in d-m-Y format 
+      // Initialize Flatpickr for Check-Out Date in d-m-Y format
       flatpickr("#check_out", {
         dateFormat: "d-m-Y",
         dateFormat: "d-m-Y",
@@ -383,7 +372,8 @@
           const formattedCheckInDate = formatDateToISO(checkInDate);
           const formattedCheckOutDate = formatDateToISO(checkOutDate);
 
-          let redirectUrl = "https://bookings.simplotel.com/?";
+          // let redirectUrl = "https://bookings.simplotel.com/?";
+          let redirectUrl = "https://bookings.clayinnhotel.com/?";
 
           if (location === "new-delhi") {
             redirectUrl += `chainId=9458&propertyId=9457&checkIn=${formattedCheckInDate}&checkOut=${formattedCheckOutDate}&adults=${adults}&children=${children}`;

@@ -79,14 +79,28 @@
 
 /* POP UP */
 
-.box .frame {
+header {
+  margin: 50px 0px;
+}
+.header_nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  align-content: center;
-  padding: 0px 80px;
-  margin-top: 50px;
-  margin-bottom: 60px;
+  width: 90%;
+  margin: auto;
+  padding: 20px 25px;
+  position: relative;
+}
+
+.img_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-68%, -50%);
+}
+
+.img_logo img {
+  width: 180px;
 }
 
 .box .div {
@@ -110,15 +124,12 @@
 
 .box .logo {
   width: 150px;
-  position: absolute;
-  top: 8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: -40px;
 }
 
 .box .overlap-group-wrapper {
   width: 90%;
-  height: 661px;
+  height: 550px;
   border-radius: 50px;
   margin: auto;
   position: relative;
@@ -129,7 +140,7 @@
 
 .box .overlap-group {
   position: relative;
-  height: 661px;
+  height: 550px;
   background-color: #140a0159;
   border-radius: 50px;
   display: flex;
@@ -382,9 +393,33 @@ input[type="number"] {
   text-align: start;
 }
 
+.logo_div {
+  display: none;
+  width: 100px;
+}
+
 /* RESPONSIVE ------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 768px) {
+  /* Header */
+
+  header {
+    margin: 0px;
+  }
+
+  .left_head {
+    display: none;
+  }
+
+  .img_logo {
+    display: none;
+  }
+
+  .logo_div {
+    display: block;
+    width: 100px;
+  }
+
   /* POP UP */
   .hotels {
     flex-direction: column;
@@ -412,12 +447,6 @@ input[type="number"] {
     transform: scale(0.8);
   }
   /* FRAME */
-  .box .frame {
-    margin: 10px 0px 10px 0px;
-    padding: 0px 10px;
-    margin-top: 90px;
-    margin-bottom: 15px;
-  }
 
   .text-wrapper {
     font-size: 12px;
@@ -425,9 +454,8 @@ input[type="number"] {
 
   /* LOGO */
   .box .logo {
-    width: 100px;
-    margin: auto;
-    top: 6%;
+    width: 90px;
+    margin-left: 0px;
   }
 
   /* button-explorer */
@@ -539,5 +567,15 @@ input[type="number"] {
   /* our-location-text */
   .our-location-text {
     font-size: 1.5rem;
+  }
+
+  .small-frame {
+    display: none;
+  }
+}
+
+@media (max-width: 1025px) {
+  .img_logo {
+    transform: translate(-42%, -50%);
   }
 }
