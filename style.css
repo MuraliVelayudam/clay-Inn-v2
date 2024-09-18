@@ -580,7 +580,7 @@ input[type="number"] {
   /* our-location-text */
   .our-location-text {
     font-size: 1.6rem;
-    margin-bottom: -20px;
+    margin-bottom: 0px;
   }
 
   .small-frame {
