@@ -152,7 +152,7 @@ header {
 .box .frame-2 {
   display: flex;
   flex-direction: column;
-  width: 563px;
+  width: 40%;
   align-items: flex-start;
   gap: 28px;
   position: relative;
@@ -165,7 +165,8 @@ header {
   font-family: "Poppins", Helvetica;
   font-weight: 500;
   color: #ffffff;
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  text-transform: capitalize;
+  font-size: 3.5rem;
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
@@ -175,9 +176,11 @@ header {
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-size: 14px;
   letter-spacing: 0;
   line-height: 1.6;
+  text-transform: capitalize;
+  text-align: justify;
 }
 
 form {
@@ -322,10 +325,16 @@ input[type="number"] {
 }
 
 .location-card {
-  width: 48%;
+  width: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 25px;
+  transform: scale(1);
+  transition: transform 0.3s linear;
+}
+
+.location-card:hover {
+  transform: scale(1.05);
 }
 
 /* Swiper carousel styles */
@@ -424,6 +433,12 @@ input[type="number"] {
   margin: auto;
 }
 
+.gurugram_location_Image,
+.delhi_location_Image {
+  height: 450px;
+  object-fit: cover;
+}
+
 /* RESPONSIVE ------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 768px) {
@@ -478,6 +493,7 @@ input[type="number"] {
 
   .box .overlap-group-wrapper {
     width: 95%;
+    border-radius: 40px;
   }
 
   .swiper-button-next,
@@ -542,7 +558,8 @@ input[type="number"] {
     height: auto;
     padding: 30px 15px;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
+    border-radius: 40px;
   }
 
   .box .frame-2 {
@@ -554,6 +571,7 @@ input[type="number"] {
   .box .stay-quietly-with-no {
     text-align: center;
     color: #f3ddc7;
+    font-size: 1.9rem;
   }
 
   .box .clay-inn-is-a-hotel {
@@ -567,6 +585,7 @@ input[type="number"] {
     margin-top: 10px;
     padding: 10px 15px;
     font-size: 0.9rem;
+    gap: 16px;
   }
 
   .location-card {
@@ -619,6 +638,12 @@ input[type="number"] {
     flex-direction: column;
     width: 100%;
     margin: auto;
+  }
+
+  .delhi_location_Image,
+  .gurugram_location_Image {
+    height: auto;
+    object-fit: cover;
   }
 }
 
