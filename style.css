@@ -416,7 +416,7 @@ input[type="number"] {
 }
 
 .text-wrapper-loaction {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .small-Swiper {
@@ -512,7 +512,7 @@ input[type="number"] {
     font-size: 10px;
   }
   .text-wrapper-loaction {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   /* LOGO */
@@ -666,7 +666,7 @@ input[type="number"] {
   }
   .gurugram_location_Image,
   .delhi_location_Image {
-    height: 300px;
+    height: 250px;
     object-fit: cover;
   }
 }
