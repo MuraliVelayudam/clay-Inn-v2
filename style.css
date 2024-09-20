@@ -439,6 +439,12 @@ input[type="number"] {
   margin: auto;
 }
 
+.gurugram_location_Image,
+.delhi_location_Image {
+  height: 420px;
+  object-fit: cover;
+}
+
 /* RESPONSIVE ------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 768px) {
@@ -647,13 +653,20 @@ input[type="number"] {
     width: 100%;
     margin: auto;
   }
+
+  .gurugram_location_Image,
+  .delhi_location_Image {
+    height: auto;
+  }
 }
 
 @media (max-width: 1025px) {
   .img_logo {
     transform: translate(-42%, -50%);
   }
-  .box .stay-quietly-with-no {
-    /* font-size: 2rem; */
+  .gurugram_location_Image,
+  .delhi_location_Image {
+    height: 300px;
+    object-fit: cover;
   }
 }
