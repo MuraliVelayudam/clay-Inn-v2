@@ -170,14 +170,6 @@ header {
   line-height: 1.2;
 }
 
-.firstHead {
-  font-size: 2.6rem;
-}
-
-.secondHead {
-  font-size: 2.2rem;
-}
-
 .box .clay-inn-is-a-hotel {
   align-self: stretch;
   font-family: "Poppins", Helvetica;
@@ -581,14 +573,6 @@ input[type="number"] {
     /* font-size: 1.9rem; */
   }
 
-  .firstHead {
-    font-size: 1.9rem;
-  }
-
-  .secondHead {
-    font-size: 1.8rem;
-  }
-
   .box .clay-inn-is-a-hotel {
     text-align: center;
     font-size: 0.8rem;
@@ -661,7 +645,7 @@ input[type="number"] {
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 426px) and( max-width: 1025px) {
   .img_logo {
     transform: translate(-42%, -50%);
   }
@@ -669,5 +653,75 @@ input[type="number"] {
   .delhi_location_Image {
     height: 250px;
     object-fit: cover;
+  }
+}
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+@media (max-width: 575px) {
+  .firstHead {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+  }
+  .box .clay-inn-is-a-hotel {
+    color: white;
+  }
+
+  .secondHead {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .firstHead {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .secondHead {
+    font-size: 2.7rem;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .firstHead {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fcf4e7;
+  }
+
+  .secondHead {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #fcf4e7;
+  }
+
+  .box .clay-inn-is-a-hotel {
+    color: #f3ddc7;
+  }
+}
+@media (min-width: 1200px) {
+  .firstHead {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fcf4e7;
+  }
+
+  .secondHead {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #fcf4e7;
+  }
+
+  .box .clay-inn-is-a-hotel {
+    color: #f3ddc7;
   }
 }
