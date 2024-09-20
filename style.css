@@ -152,7 +152,7 @@ header {
 .box .frame-2 {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
   align-items: flex-start;
   gap: 28px;
   position: relative;
@@ -165,10 +165,17 @@ header {
   font-family: "Poppins", Helvetica;
   font-weight: 500;
   color: #ffffff;
-  text-transform: capitalize;
   font-size: 3.5rem;
   letter-spacing: -0.02em;
   line-height: 1.2;
+}
+
+.firstHead {
+  font-size: 2.6rem;
+}
+
+.secondHead {
+  font-size: 2.2rem;
 }
 
 .box .clay-inn-is-a-hotel {
@@ -179,7 +186,6 @@ header {
   font-size: 14px;
   letter-spacing: 0;
   line-height: 1.6;
-  text-transform: capitalize;
   text-align: justify;
 }
 
@@ -565,7 +571,15 @@ input[type="number"] {
   .box .stay-quietly-with-no {
     text-align: center;
     color: #f3ddc7;
+    /* font-size: 1.9rem; */
+  }
+
+  .firstHead {
     font-size: 1.9rem;
+  }
+
+  .secondHead {
+    font-size: 1.8rem;
   }
 
   .box .clay-inn-is-a-hotel {
@@ -638,5 +652,8 @@ input[type="number"] {
 @media (max-width: 1025px) {
   .img_logo {
     transform: translate(-42%, -50%);
+  }
+  .box .stay-quietly-with-no {
+    /* font-size: 2rem; */
   }
 }
