@@ -331,7 +331,7 @@ input[type="number"] {
 }
 
 .location-card {
-  width: 50%;
+  width: 45%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 25px;
@@ -442,6 +442,7 @@ input[type="number"] {
 .gurugram_location_Image,
 .delhi_location_Image {
   height: 420px;
+  object-position: center;
   object-fit: cover;
 }
 
